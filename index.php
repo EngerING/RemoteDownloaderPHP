@@ -142,7 +142,13 @@ if (curl_errno($ch)) {
     $err = curl_error($ch);
     log_message("❌ cURL error: $err");
     fclose($fp);
-    // unlink($filePath);
+
+    $incompletePath = DOWNLOAD_DIR . '/not-complete-' . basename($filePath);
+    if (file_exists($filePath)) {
+        rename($filePath, $incompletePath);
+        log_message("Renamed incomplete file to: " . basename($incompletePath));
+    }
+
     echo "❌ Download failed: $err";
     curl_close($ch);
     exit;
