@@ -3,6 +3,8 @@
 // Developed by Max Base (Seyyed Ali Mohammadiyeh)
 
 // === CONFIGURATION ===
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 set_time_limit(0);
 ini_set('zlib.output_compression', 'Off');
 ob_implicit_flush(true);
