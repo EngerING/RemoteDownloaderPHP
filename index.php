@@ -149,7 +149,6 @@ if (curl_errno($ch)) {
         log_message("Renamed incomplete file to: " . basename($incompletePath));
     }
 
-    echo "❌ Download failed: $err";
     curl_close($ch);
     exit;
 } else {
