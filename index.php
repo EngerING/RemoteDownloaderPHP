@@ -8,7 +8,7 @@ ini_set('zlib.output_compression', 'Off');
 ob_implicit_flush(true);
 while (ob_get_level()) ob_end_flush();
 
-define('LOG_FILE', __DIR__ . '/grabber.log');
+define('LOG_FILE', __DIR__ . '/downloader.log');
 define('USER_AGENT', 'RemoteDownloaderPHP/1.1');
 define('DOWNLOAD_DIR', __DIR__ . '/downloads');
 
@@ -142,7 +142,7 @@ if (curl_errno($ch)) {
     $err = curl_error($ch);
     log_message("❌ cURL error: $err");
     fclose($fp);
-    unlink($filePath);
+    // unlink($filePath);
     echo "❌ Download failed: $err";
     curl_close($ch);
     exit;
